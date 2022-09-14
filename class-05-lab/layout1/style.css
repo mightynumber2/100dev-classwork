@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+header, footer {
+  height: 100px;
+  border: 2px solid purple;
+  clear: both;
+}
+
+.article-first section {
+  width: 33.33%;
+  height: 150px;
+  border: 2px solid orange;
+  float: left;
+}
+
+.article-second section {
+  width: 50%;
+  height: 200px;
+  border: 2px solid orangered;
+  float: left;
+}
