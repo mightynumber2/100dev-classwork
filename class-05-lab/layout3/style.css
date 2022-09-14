@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+header, footer {
+  height: 75px;
+  border: 1px solid grey;
+  clear: both;
+}
+
+main article {
+  height: 275px;
+  width: 20%;
+  border: 1px solid grey;
+  float: left;
+}
+
+.article-chubby {
+  width: 20%;
+}
+
+.article-fat {
+  width: 40%;
+}
