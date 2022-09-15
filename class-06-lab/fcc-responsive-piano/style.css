@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+#piano {
+  background: #074507;
+  width: 989px;
+  height: 287px;
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: 10px;
+  /* position: relative; */
+}
+
+img {
+  width: 200px;
+  position: absolute;
+}
+
+.keyboard {
+  background: black;
+  width: 947px;
+  height: 177px;
+  margin-top: 69px;
+  padding: 1px;
+  padding-top: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.keys {
+  background: white;
+  width: 41px;
+  height: 172px;
+  float: left;
+  margin: 2px;
+  position: relative;
+}
+
+.keys, .key--black::after {
+  border-radius: 0 0 5px 5px;
+}
+
+.key--black::after {
+  background: #1f1e1e;
+  width: 32px;
+  height: 100px;
+  position: absolute;
+  content: "";
+  left: -18px;
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  #piano {
+    width: 675px;
+  }
+
+  .keyboard {
+    width: 633px;
+  }
+}
+
+@media (max-width: 768px) {
+  #piano {
+    width: 359px;
+  }
+
+  .keyboard {
+    width: 318px;
+  }
+
+  img {
+    width: 150px;
+  }
+
+}
