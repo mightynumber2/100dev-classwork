@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  width: 10%;
+  float: left;
+}
+
+nav ul {
+  padding: 0;
+}
+
+main {
+  width: 60%;
+  float: left;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+main img {
+  width: 100%;
+}
+
+aside {
+  width: 30%;
+  float: left;
+}
+
+h3 {
+  margin: 0;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+aside + section {
+  width: 40%;
+  padding-left: 100px;
+  float: left;
+}
+
+section h2 {
+  font-size: 20px;
+}
+
+section span {
+  font-size: 10px;
+  display: block;
+}
+
+section p {
+  width: 30%;
+  font-size: 12px;
+  margin-top: 50px;
+  padding: 0 20px;
+  float: left;
+}
+
+section + img {
+  width: 20%;
+  margin-top: 50px;
+  float: left;
+}
+
+/* QUERIES */
+@media (max-width: 758px) {
+  main {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  aside {
+    width: 50%;
+    margin-left: 60px;
+    margin-top: 0px;
+  }
+
+  aside li {
+    margin-bottom: 10px;
+  }
+
+  aside + section {
+    width: 60%;
+  }
+
+  section p {
+    width: 40%;
+  }
+    
+  section + img {
+    margin-left: 100px;
+    margin-top: 30px;
+    clear: left;
+    width: 20%;
+  }
+}
+
+@media (max-width: 555px) {
+  nav img {
+    visibility: hidden;
+  }
+
+  aside + section {
+    width: 100%;
+  }
+
+  section h3 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  section h2 {
+    margin-bottom: 10px;
+  }
+
+  section p {
+    width: 60%;
+    margin-left: 80px;
+    margin-top: 15px;
+  }
+
+  section + img {
+    margin-top: 10px;
+  }
+}

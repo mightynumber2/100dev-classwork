@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+nav * {
+  float: left;
+}
+
+nav > a {
+  font-size: 1.5rem;
+  width: 10%;
+}
+
+nav form input {
+  width: 80%;
+}
+
+h2 {
+  width: 30%;
+  font-size: 1.8rem;
+  padding-left: 125px;
+}
+
+nav h2, ul {
+  margin-top: 0;
+}
+
+nav ul {
+  padding-left: 125px;
+}
+
+nav li {
+  font-size: 1.5rem;
+  list-style: none;
+  padding-right: 20px;
+}
+
+main * {
+  float: left;
+}
+
+img {
+  margin-top: 100px;
+  width: 40%;
+  clear: both;
+}
+
+main {
+  margin-left: 255px;
+}
+
+section {
+  max-width: 34%;
+  margin-top: 100px;
+  margin-left: 25px;
+}
+
+h1 {
+  max-width: 80%;
+  font-size: 3.6rem;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+section ul {
+  padding: 0;
+}
+
+section li {
+  list-style: none;
+  padding-right: 22px;
+  font-size: 1.4rem;
+}
+
+/* QUERIES */
+@media (max-width: 1025px) {
+  section {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 769px) {
+  nav li {
+    padding-bottom: 30px;
+  }
+
+  nav h2 {
+    width: 25%;
+    padding-left: 50px;
+  }
+
+  nav ul {
+    padding-left: 75px;
+  }
+
+  main {
+    margin-left: 150px;
+  }
+
+  section {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 426px) {
+  nav > a {
+    font-size: 1.5rem;
+    width: 10%;
+    margin-right: 20px;
+  }
+
+  nav form {
+    width: 35%;
+  }
+
+  nav form input {
+    width: 50%;
+  }
+
+  nav h2 {
+    width: 30%;
+    font-size: 1.6rem;
+    padding-left: 0px;
+    margin-right: 16px;
+  }
+
+  nav ul {
+    padding: 0px;
+  }
+
+  nav ul li {
+    float: none;
+  }
+
+  main {
+    margin-left: 50px;
+    width: 100%;
+  }
+
+  img {
+    margin-top: 30px;
+    width: 60%;
+    clear: both;
+  }
+
+  section {
+    max-width: 100%;
+    margin-top: 0px;
+  }
+
+  p {
+    max-width: 70%;
+  }
+}
