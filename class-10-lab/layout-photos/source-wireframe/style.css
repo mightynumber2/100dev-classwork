@@ -1,0 +1,326 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.button {
+  border: 1px solid #29465B;
+  background: #29465B;
+  color: white;
+  padding: 3px 14px;
+}
+
+body {
+  background: #d4dae1;
+  color: #29465B;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header *{
+  float: left;
+  margin: 0;
+  padding: 0;
+  color: #29465B;
+}
+
+header ion-icon {
+  display: none;
+}
+
+header h2 {
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+
+nav {
+  margin-top: .3rem;
+  margin-left: 40rem;
+  font-size: 1.4rem;
+}
+
+nav li {
+  margin: 0 2rem;
+}
+
+nav .button {
+  margin-left: 39rem;
+}
+
+main, div{
+  margin-left: 9rem;
+}
+
+main section {
+  float: left;
+  width: 35%;
+  margin-top: 8rem;
+} 
+
+h1 {
+  font-size: 3rem;
+  width: 50%;
+  margin-top: 1rem;
+}
+
+form .button {
+  font-size: 1.3rem;
+}
+
+main section p {
+  width: 63%;
+  font-size: 1.4rem;
+}
+
+img {
+  float: right;
+  width: 65%;
+  margin-top: 6rem;
+}
+
+div {
+  margin-top: 8rem;
+}
+
+div section {
+  width: 25%;
+  float: left;
+}
+
+div ion-icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+div h3 {
+  font-size: 1.5rem;
+}
+
+div p {
+  font-size: 1.4rem;
+  width: 54%;
+}
+
+div a {
+  font-size: 1.4rem;
+  color: #29465B;
+  font-weight: bold;
+}
+
+div + section {
+  background: whitesmoke;
+  padding: 0;
+  float: left;
+  width: 100%;
+  margin-top: 5rem;
+  padding-left: 8rem;
+}
+
+section h4 {
+  font-size: 6rem;
+  margin-bottom: 0;
+  margin-top: 6rem;
+  width: 45%;
+}
+
+div + section p {
+  font-size: 1.4rem;
+  width: 45%;
+}
+
+div + section section {
+  background: #d4dae1;
+  width: 93%;
+  height: 3rem;
+  margin-top: 5rem;
+}
+
+/* QUERIES */
+
+@media (max-width: 1025px) {
+  nav {
+    margin-left: 25rem;  
+  }
+  
+  nav .button {
+    margin-left: 19rem;
+  }
+
+  h1 {
+    width: 80%;
+  }
+
+  img {
+    width: 60%;
+    margin-top: 6rem;
+  }  
+
+  main section p {
+    width: 70%;
+  }
+
+  div p {
+    width: 75%;
+  }
+
+  section h4 {
+    width: 55%;
+  }
+}
+
+@media (max-width: 769px) {
+  main, div {
+    margin-left: 4rem;
+  }
+
+  nav {
+    margin-left: 10rem;  
+  }
+  
+  nav .button {
+    margin-left: 8rem;
+  }
+
+  h1 {
+    width: 95%;
+  }
+
+  img {
+    width: 60%;
+    margin-top: 6rem;
+  }  
+
+  main section p {
+    width: 95%;
+  }
+
+  div p {
+    width: 95%;
+  }
+
+  section h4 {
+    width: 75%;
+  }
+
+  div + section p {
+    font-size: 1.4rem;
+    width: 55%;
+  }
+
+  div + section section {
+    width: 89%;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 426px) {
+  header ion-icon {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 2rem;
+    display: block;
+  }
+
+  main, div {
+    margin-left: 1rem;
+  }
+
+  header h2 {
+    margin-left: 13rem;
+  }
+
+  nav {
+    visibility: hidden; 
+  }
+
+  h2 + p {
+    border-bottom: 2px solid #9ab4c4;
+    width: 90%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  main section {
+    float: none;
+    margin-left: 4rem;
+    width: 90%;
+    margin-top: 0;
+  }
+
+  h1 {
+    width: 90%;
+  }
+
+  img {
+    width: 70%;
+    margin-top: 3rem;
+    margin-right: 7rem;
+  }  
+
+  main section p {
+    width: 80%;
+  }
+
+  div p {
+    width: 85%;
+  }
+
+  div section {
+    width: 50%;
+    float: left;
+    margin-top: 3rem;
+  }
+  
+  div {
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+
+  div + section {
+    padding-left: 4rem;
+  }
+
+  section h4 {
+    width: 90%;
+    font-size: 4rem;
+  }
+  
+  div + section p {
+    font-size: 1.4rem;
+    width: 85%;
+  }
+  
+  div + section section {
+    width: 83%;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 376px) {
+  header h2 {
+    margin-left: 11rem;
+  }
+
+  div p {
+    width: 80%;
+  }
+}
