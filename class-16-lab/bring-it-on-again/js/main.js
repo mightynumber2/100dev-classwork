@@ -37,6 +37,21 @@ add2Sub2(2, 2, 5, 4); */
   }
 }
 checkDayOfWeek('Friday'); */
+function checkDayOfWeek(day) {
+  weekdays = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday']
+  day = day.toLowerCase();
+
+  if (day === 'sunday' || day === 'saturday') { 
+    alert('weekend');
+  } else if (day !== weekdays[0, 1, 2, 3, 4]) { 
+    alert('Try again!');
+  } else {
+    alert("week day");
+  }
+}
+checkDayOfWeek('Sunday');
+
+
 //*Loops*
 //Create a function that takes in a number. Console log all values from 1 to that number or greater, but count by 3
 function loopBy3(max) {
@@ -44,4 +59,4 @@ function loopBy3(max) {
     console.log(i);
   }
 }
-loopBy3(25);
+// loopBy3(25);
