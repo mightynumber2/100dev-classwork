@@ -26,5 +26,4 @@ let sum = 0;
 
   // numArr.forEach((num, i) => sum += num);
 
-avgQ2 = sum / numArr.length;
-console.log(avgQ2);
+console.log(sum / numArr.length);
