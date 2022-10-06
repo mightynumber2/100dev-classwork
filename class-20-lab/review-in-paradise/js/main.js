@@ -22,10 +22,17 @@ console.log(Math.cbrt(num1).toFixed(4));
 
 // *Conditionals*
 //Create a function that takes in a month. If it is a summer month alert "YAY". If another other month, alert "Booo"
-function checkSummer(month) {
+/* function checkSummer(month) {
   month = month.toLowerCase();
   month === 'june' || month === 'july' || month === 'august' ? alert('YAY') : alert('Booo')
+} */
+
+function checkSummer(month) {
+  const summer = ['june', 'july', 'august'];
+
+  summer.includes(month.toLowerCase()) ? alert('YAY') : alert('Booo');
 }
+checkSummer('august');
 
 //*Loops*
 //Create a function that takes in a number. Console log every number from 1 to that number while skipping multiples of 5.
