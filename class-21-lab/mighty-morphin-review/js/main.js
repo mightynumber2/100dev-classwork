@@ -22,10 +22,7 @@ function lowestHighest(num1, num2, num3) {
 //Create a function that returns heads or tails randomly and as fairly as possible. Call the function.
 function headsOrTails() {
   const roll = Math.random();
-  if (roll > .5) {
-    return 'heads';
-  }
-    return 'tails';
+  return roll > .5 ? 'heads' : 'tails';
 }
 // console.log(headsOrTails());
 //*Loops*
