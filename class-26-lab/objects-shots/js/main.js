@@ -23,9 +23,13 @@ document.querySelector('button').onclick = function() {
     .then(res => res.json())
     .then(data => {
       console.log(data.drinks);
-      document.querySelector('h2').textContent = data.drinks[0].strDrink;
-      document.querySelector('img').src = data.drinks[0].strDrinkThumb;
-      document.querySelector('h3').textContent = data.drinks[0].strInstructions;
+      data.drinks.forEach((drink, i) => {
+        setTimeout(() => {
+        document.querySelector('h2').textContent = drink.strDrink;
+        document.querySelector('img').src = drink.strDrinkThumb;
+        document.querySelector('h3').textContent = drink.strInstructions;
+        }, i * 3000);
+      })
     })
     .catch(err => console.log(`error: ${err}`));
 };
