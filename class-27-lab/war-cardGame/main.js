@@ -1,5 +1,6 @@
 const plDeck = document.getElementById('player1')
 const p2Deck = document.getElementById('player2')
+const winText = document.getElementById('winner')
 const p1ScoreText = document.getElementById('p1Score')
 const p2ScoreText = document.getElementById('p2Score')
 let p1Score = 0;
@@ -14,6 +15,7 @@ document.querySelector('#deck').onclick = function() {
   // Empty the player card images
   plDeck.src = ''
   p2Deck.src = ''
+  winText.textContent = ''
   p1ScoreText.textContent = ''
   p2ScoreText.textContent = ''
 
@@ -40,7 +42,6 @@ document.querySelector('#draw').onclick = function() {
 
       const p1Card = checkCard(data.cards[0].value)
       const p2Card = checkCard(data.cards[1].value)
-      const winText = document.getElementById('winner')
 
       if (p1Card > p2Card) {
         winText.textContent = 'Player 1 Scores!'
