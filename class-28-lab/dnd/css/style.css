@@ -10,6 +10,11 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+body{
+  background: black;
+  color: wheat;
+}
+
 img{
   display: block;
   margin: 0 auto;
